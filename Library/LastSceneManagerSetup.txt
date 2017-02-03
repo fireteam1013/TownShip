@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scratch_Combat.unity
+- path: Assets/Demo_Movement.unity
   isLoaded: 1
   isActive: 1
