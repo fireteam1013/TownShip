@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class d_Node : MonoBehaviour {
+public class d_Node {
 
     Vector2 pos;
     bool canMove;

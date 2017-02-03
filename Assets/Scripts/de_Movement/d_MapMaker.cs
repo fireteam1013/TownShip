@@ -2,46 +2,73 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent (typeof(d_NodeManager))]
+//[RequireComponent (typeof(d_NodeManager))]
 public class d_MapMaker : MonoBehaviour {
 
     d_NodeManager d_NManager;
     int mapSizeX = 10;
     int mapSizeY = 10;
     int[,] mapArray;
+    GameObject[,] tileArray;
+    public Sprite[] tileTypes;
 
     void Start()
     {
         d_NManager = GetComponent<d_NodeManager>();
+        d_NManager.configureNodes(mapSizeX, mapSizeY);
         ConfigureArray();
     }
 
     void ConfigureArray()
     {
+        //Configure mapArray
         mapArray = new int[mapSizeX, mapSizeY];
         for (int x = 0; x < mapSizeX; x++)
         {
             for (int y = 0; y < mapSizeY; y++)
             {
-                mapArray[x, y] = 1;
+                mapArray[x, y] = 0;
             }
         }
-        mapArray[4, 4] = 2;
+        mapArray[4, 4] = 1;
+
+        ConfigureNodes();
 
 
-        d_NManager.configureNodes(mapSizeX, mapSizeY);
-
-        //This sets the movement of each node as the mapArray
-        //TODO: Find another way of doing this as the tiles(graphics) need to use the information stored in the mapArray
+        //Configure Tiles
+        tileArray = new GameObject[mapSizeX, mapSizeY];
         for (int x = 0; x < mapSizeX; x++)
         {
             for (int y = 0; y < mapSizeY; y++)
             {
-                d_NManager.nodeArray[x, y].MovementCost = mapArray[x, y];
+                GameObject tile = new GameObject();
+                tile.AddComponent<SpriteRenderer>();
+                tile.GetComponent<SpriteRenderer>().sprite = tileTypes[mapArray[x, y]];
+                tile.transform.position = new Vector2(x, y);
+                tile.AddComponent<d_Tile>();
+                tile.GetComponent<d_Tile>().setNode(d_NManager.nodeArray[x, y]);
+            }
+        }
+
+
+
+
+        //This sets the movement of each node as the mapArray
+        //TODO: Find another way of doing this as the tiles(graphics) need to use the information stored in the mapArray
+        
+    }
+
+    void ConfigureNodes()
+    {
+        for (int x = 0; x < mapSizeX; x++)
+        {
+            for (int y = 0; y < mapSizeY; y++)
+            {
+                d_NManager.nodeArray[x, y].MCost = mapArray[x, y] + 1;
+                d_NManager.nodeArray[x, y].Pos = new Vector2(x, y);
             }
         }
     }
-
 
 
 

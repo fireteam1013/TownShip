@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class d_Unit : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    int movement;
+
+    public int Movement
+    {
+        get
+        {
+            return movement;
+        }
+
+        set
+        {
+            movement = value;
+        }
+    }
 }

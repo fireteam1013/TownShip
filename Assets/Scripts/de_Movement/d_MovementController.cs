@@ -4,13 +4,6 @@ using UnityEngine;
 
 public class d_MovementController : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	//Get movement from unit
+
 }
