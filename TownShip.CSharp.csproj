@@ -110,6 +110,7 @@
     <Compile Include="Assets\Scripts\de_Movement\d_MovementController.cs" />
     <Compile Include="Assets\Scripts\de_Movement\d_Node.cs" />
     <Compile Include="Assets\Scripts\de_Movement\d_NodeManager.cs" />
+    <Compile Include="Assets\Scripts\de_Movement\d_OverlayManager.cs" />
     <Compile Include="Assets\Scripts\de_Movement\d_Tile.cs" />
     <Compile Include="Assets\Scripts\de_Movement\d_Unit.cs" />
   </ItemGroup>

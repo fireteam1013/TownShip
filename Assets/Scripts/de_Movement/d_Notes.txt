@@ -11,4 +11,6 @@ Number of squares per distance
 10	=	220	-	40
 
 
+
+
 Base tile movement cost = 0

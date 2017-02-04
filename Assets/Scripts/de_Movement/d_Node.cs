@@ -5,8 +5,8 @@ using UnityEngine;
 public class d_Node {
 
     Vector2 pos;
-    bool canMove;
-    int mCost;
+    bool canMove = true;
+    int mCost = 0;
 
     public Vector2 Pos
     {
