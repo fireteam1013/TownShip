@@ -1,0 +1,14 @@
+Number of squares per distance
+1	=	4	-	4
+2	=	12	-	8
+3	=	24	-	12
+4	=	40	-	16
+5	=	60	-	20
+6	=	84	-	24
+7	=	112	-	28
+8	=	144	-	32
+9	=	180	-	36
+10	=	220	-	40
+
+
+Base tile movement cost = 0
