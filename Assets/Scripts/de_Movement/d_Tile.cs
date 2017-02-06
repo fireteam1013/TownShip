@@ -17,14 +17,14 @@ public class d_Tile : MonoBehaviour {
     }
 
 
-    void OnGUI()
-    {
-        GUIStyle tileDebug = new GUIStyle();
-        tileDebug.fontSize = 8;
+    //void OnGUI()
+    //{
+    //    GUIStyle tileDebug = new GUIStyle();
+    //    tileDebug.fontSize = 8;
 
-        GUI.Label(new Rect(p.x - 30, Screen.height - p.y - 30, 80, 20), node.Pos.ToString(), tileDebug);
-        GUI.Label(new Rect(p.x - 30, Screen.height - p.y - 20, 80, 20), "F = " + f, tileDebug);
-        GUI.Label(new Rect(p.x - 30, Screen.height - p.y, 80, 20), "G = ", tileDebug);
-        GUI.Label(new Rect(p.x, Screen.height - p.y, 80, 20), "H = ", tileDebug);
-    }
+    //    GUI.Label(new Rect(p.x - 30, Screen.height - p.y - 30, 80, 20), node.Pos.ToString(), tileDebug);
+    //    GUI.Label(new Rect(p.x - 30, Screen.height - p.y - 20, 80, 20), "F = " + f, tileDebug);
+    //    GUI.Label(new Rect(p.x - 30, Screen.height - p.y, 80, 20), "G = ", tileDebug);
+    //    GUI.Label(new Rect(p.x, Screen.height - p.y, 80, 20), "H = ", tileDebug);
+    //}
 }

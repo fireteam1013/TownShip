@@ -46,8 +46,8 @@ public class d_MapMaker : MonoBehaviour {
                 tile.AddComponent<SpriteRenderer>();
                 tile.GetComponent<SpriteRenderer>().sprite = tileTypes[mapArray[x, y]];
                 tile.transform.position = new Vector2(x, y);
-                tile.AddComponent<d_Tile>();
-                tile.GetComponent<d_Tile>().setNode(d_NManager.nodeArray[x, y]);
+                //tile.AddComponent<d_Tile>();
+                //tile.GetComponent<d_Tile>().setNode(d_NManager.nodeArray[x, y]);
             }
         }
 

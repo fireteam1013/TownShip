@@ -9,7 +9,7 @@ public class d_Node {
     int mCost = 0;
     int fScore;
 
-
+    #region Encapsulation
     public Vector2 Pos
     {
         get
@@ -61,4 +61,5 @@ public class d_Node {
             fScore = value;
         }
     }
+    #endregion
 }
