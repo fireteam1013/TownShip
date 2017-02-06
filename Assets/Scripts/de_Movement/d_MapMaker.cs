@@ -9,7 +9,7 @@ public class d_MapMaker : MonoBehaviour {
     int mapSizeX = 10;
     int mapSizeY = 10;
     int[,] mapArray;
-    GameObject[,] tileArray;
+    public GameObject[,] tileArray;
     public Sprite[] tileTypes;
 
     void Start()
@@ -42,6 +42,7 @@ public class d_MapMaker : MonoBehaviour {
             for (int y = 0; y < mapSizeY; y++)
             {
                 GameObject tile = new GameObject();
+                tileArray[x, y] = tile;
                 tile.AddComponent<SpriteRenderer>();
                 tile.GetComponent<SpriteRenderer>().sprite = tileTypes[mapArray[x, y]];
                 tile.transform.position = new Vector2(x, y);
@@ -64,7 +65,7 @@ public class d_MapMaker : MonoBehaviour {
         {
             for (int y = 0; y < mapSizeY; y++)
             {
-                d_NManager.nodeArray[x, y].MCost = mapArray[x, y] + 1;
+                d_NManager.nodeArray[x, y].MCost = mapArray[x, y];
                 d_NManager.nodeArray[x, y].Pos = new Vector2(x, y);
             }
         }

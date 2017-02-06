@@ -14,3 +14,10 @@ Number of squares per distance
 
 
 Base tile movement cost = 0
+
+
+PseudoCode
+Generate the map
+Create nodes for each tile
+
+

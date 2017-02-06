@@ -7,6 +7,8 @@ public class d_Node {
     Vector2 pos;
     bool canMove = true;
     int mCost = 0;
+    int fScore;
+
 
     public Vector2 Pos
     {
@@ -44,6 +46,19 @@ public class d_Node {
         set
         {
             mCost = value;
+        }
+    }
+
+    public int FScore
+    {
+        get
+        {
+            return fScore;
+        }
+
+        set
+        {
+            fScore = value;
         }
     }
 }
