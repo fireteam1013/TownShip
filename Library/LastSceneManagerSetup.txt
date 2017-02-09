@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Demo_Movement.unity
+- path: Assets/_Scenes/00_MainMenu.unity
   isLoaded: 1
   isActive: 1
