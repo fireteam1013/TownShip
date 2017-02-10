@@ -6,4 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Demo_Movement.unity
+    path: Assets/_Scenes/00_MainMenu.unity
+  - enabled: 1
+    path: Assets/_Scenes/01_GameCreation.unity
