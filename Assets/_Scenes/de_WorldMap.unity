@@ -160,6 +160,9 @@ MonoBehaviour:
   - name: asdf
     tileVisualPrefab: {fileID: 1159039770777826, guid: 2e6faaf499d5412479064a52ce5f3132,
       type: 2}
+  overlayMove: {fileID: 1716178754161512, guid: 89b2fbea7f0900a478af59ee18c51d2c,
+    type: 2}
+  overlayAttack: {fileID: 0}
   mapSizeX: 40
   mapSizeY: 40
 --- !u!114 &740983806

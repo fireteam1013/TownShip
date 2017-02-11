@@ -15,7 +15,7 @@ public class de_MouseControls : MonoBehaviour {
             {
             Vector3 _mousePos = new Vector3(Mathf.RoundToInt(mouseRayHit.point.x), Mathf.RoundToInt(mouseRayHit.point.y), Mathf.RoundToInt(mouseRayHit.point.z));
             mouseHit = _mousePos;
-            Debug.Log(de_MapMakerOld.tiles[Mathf.RoundToInt(_mousePos.x), Mathf.RoundToInt(_mousePos.y)]);
+            
             }
     }
 }
