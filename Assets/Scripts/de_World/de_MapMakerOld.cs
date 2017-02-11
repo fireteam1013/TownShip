@@ -13,6 +13,7 @@ public class de_MapMakerOld : MonoBehaviour {
 
 
     public static int[,] tiles;
+    public GameObject[,] overlayMoveArray;
     public int mapSizeX;
     public int mapSizeY;
 
@@ -210,10 +211,15 @@ public class de_MapMakerOld : MonoBehaviour {
         return totalMountainTileCount;
     }
 
+    
+
     void GenerateMapVisuals()
     {
         GameObject mapHolder = new GameObject();
         mapHolder.name = "MapHolder";
+
+        overlayMoveArray = new GameObject[mapSizeX, mapSizeY];
+
         for (int x = 0; x < mapSizeX; x++)
         {
             for (int y = 0; y < mapSizeY; y++)
@@ -224,6 +230,7 @@ public class de_MapMakerOld : MonoBehaviour {
                 GameObject go = (GameObject)Instantiate(tt.tileVisualPrefab, new Vector3(hx, hz, 0), Quaternion.identity, mapHolder.transform);
                 GameObject ov = Instantiate(overlayMove, new Vector3(hx, hz, 0), transform.rotation, go.transform);
                 ov.SetActive(false);
+                overlayMoveArray[x, y] = ov;
             }
         }
     }

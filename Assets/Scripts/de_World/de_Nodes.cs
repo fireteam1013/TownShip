@@ -10,4 +10,8 @@ public class de_Nodes {
     public GameObject x;
 
     public de_Nodes previousNode;
+
+    public int FScore;
+    public int GScore;
+    public int HScore;
 }
