@@ -5,9 +5,9 @@ using UnityEngine;
 /// Description Here
 /// </summary>=================================================
 
-public class classMage : baseClasses
+public class class_Mage : baseClasses
 {
-    public classMage()
+    public class_Mage()
     {
         ClassName = "Mage";
         ClassDescrition = "The mage class.";
