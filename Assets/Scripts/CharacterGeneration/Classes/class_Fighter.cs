@@ -5,9 +5,9 @@ using System.Collections;
 /// Insert description here
 /// </summary>
 
-public class classFighter : baseClasses
+public class class_Fighter : baseClasses
 {
-    public classFighter()
+    public class_Fighter()
     {
         ClassName = "Fighter";
         ClassDescrition = "The fighter class.";
