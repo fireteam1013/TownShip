@@ -5,9 +5,9 @@ using System.Collections;
 /// Insert description here
 /// </summary>
 
-public class classRanger : baseClasses
+public class class_Ranger : baseClasses
 {
-    public classRanger()
+    public class_Ranger()
     {
         ClassName = "Ranger";
         ClassDescrition = "The ranger class.";

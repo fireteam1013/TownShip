@@ -52,6 +52,9 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -67,6 +70,9 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.VR">
       <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
     </Reference>
@@ -79,10 +85,19 @@
     <Compile Include="Assets\Scripts\01_GameCreation\de_PartySize.cs" />
     <Compile Include="Assets\Scripts\CharacterGeneration\Abilities\ActiveAbilities.cs" />
     <Compile Include="Assets\Scripts\CharacterGeneration\Classes\baseClasses.cs" />
-    <Compile Include="Assets\Scripts\CharacterGeneration\Classes\classFighter.cs" />
-    <Compile Include="Assets\Scripts\CharacterGeneration\Classes\classMage.cs" />
     <Compile Include="Assets\Scripts\CharacterGeneration\Classes\classNull.cs" />
-    <Compile Include="Assets\Scripts\CharacterGeneration\Classes\classRanger.cs" />
+    <Compile Include="Assets\Scripts\CharacterGeneration\Classes\class_Apprentice.cs" />
+    <Compile Include="Assets\Scripts\CharacterGeneration\Classes\class_Barbarian.cs" />
+    <Compile Include="Assets\Scripts\CharacterGeneration\Classes\class_Cleric.cs" />
+    <Compile Include="Assets\Scripts\CharacterGeneration\Classes\class_Druid.cs" />
+    <Compile Include="Assets\Scripts\CharacterGeneration\Classes\class_Fighter.cs" />
+    <Compile Include="Assets\Scripts\CharacterGeneration\Classes\class_Guard.cs" />
+    <Compile Include="Assets\Scripts\CharacterGeneration\Classes\class_Mage.cs" />
+    <Compile Include="Assets\Scripts\CharacterGeneration\Classes\class_Paladin.cs" />
+    <Compile Include="Assets\Scripts\CharacterGeneration\Classes\class_Ranger.cs" />
+    <Compile Include="Assets\Scripts\CharacterGeneration\Classes\class_Rogue.cs" />
+    <Compile Include="Assets\Scripts\CharacterGeneration\Classes\class_Villager.cs" />
+    <Compile Include="Assets\Scripts\CharacterGeneration\Classes\class_Witch.cs" />
     <Compile Include="Assets\Scripts\CharacterGeneration\Items\Armor\Chest\baseArmor.cs" />
     <Compile Include="Assets\Scripts\CharacterGeneration\Items\Armor\Fingers\baseRing.cs" />
     <Compile Include="Assets\Scripts\CharacterGeneration\Items\Armor\Foot\baseFootwear.cs" />

@@ -17,9 +17,9 @@ public class unitCreation : MonoBehaviour
 
     public baseClasses[] playerClass = new baseClasses[] {
         new classNull(),
-        new classFighter(),
-        new classMage(),
-        new classRanger()
+        new class_Fighter(),
+        new class_Mage(),
+        new class_Ranger()
     };
 
 
