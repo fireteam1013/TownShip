@@ -220,6 +220,10 @@ public class de_MapMakerOld : MonoBehaviour {
 
         overlayMoveArray = new GameObject[mapSizeX, mapSizeY];
 
+
+
+
+
         for (int x = 0; x < mapSizeX; x++)
         {
             for (int y = 0; y < mapSizeY; y++)
@@ -227,10 +231,60 @@ public class de_MapMakerOld : MonoBehaviour {
                 TileType tt = tileTypes[tiles[x, y]];
                 float hx = x;
                 float hz = y;
-                GameObject go = (GameObject)Instantiate(tt.tileVisualPrefab, new Vector3(hx, hz, 0), Quaternion.identity, mapHolder.transform);
-                GameObject ov = Instantiate(overlayMove, new Vector3(hx, hz, 0), transform.rotation, go.transform);
-                ov.SetActive(false);
-                overlayMoveArray[x, y] = ov;
+                //GameObject go = (GameObject)Instantiate(tt.tileVisualPrefab, new Vector3(hx, hz, 0), Quaternion.identity, mapHolder.transform);
+                // ov = Instantiate(overlayMove, new Vector3(hx, hz, 0), transform.rotation, go.transform);
+                //ov.SetActive(false);
+                //overlayMoveArray[x, y] = ov;
+
+                //Mountains
+                if(tiles[x,y] == 2)
+                {
+                    GameObject go = (GameObject)Instantiate(tt.tileVisualPrefab, new Vector3(hx, hz, 0), Quaternion.identity, mapHolder.transform);
+                    #region mods
+                    float minX = -.35f;
+                    float maxX = .35f;
+                    float minY = -.25f;
+                    float maxY = .25f;
+
+                    float minScale = -.2f;
+                    float maxScale = 1.2f;
+
+                    float xP = UnityEngine.Random.Range(minX, maxX);
+                    float yP = UnityEngine.Random.Range(minY, maxY);
+                    float z = UnityEngine.Random.Range(minScale, maxScale);
+                    #endregion
+                    go.transform.position += new Vector3(xP, yP, 0);
+                    go.transform.localScale += new Vector3(z, z, z);
+
+                    go.GetComponent<SpriteRenderer>().sortingOrder = ((mapSizeY * 100) - Mathf.RoundToInt(go.transform.position.y * 100));
+                }
+
+                //Forests
+                if(tiles[x,y] == 1)
+                {
+                    for (int i = 0; i < 3; i++)
+                    {
+                        GameObject go = (GameObject)Instantiate(tt.tileVisualPrefab, new Vector3(hx, hz, 0), Quaternion.identity, mapHolder.transform);
+                        #region mods
+                        float minX = -.25f;
+                        float maxX = .25f;
+                        float minY = -.35f;
+                        float maxY = .35f;
+
+                        float minScale = -.25f;
+                        float maxScale = .25f;
+
+                        float xP = UnityEngine.Random.Range(minX, maxX);
+                        float yP = UnityEngine.Random.Range(minY, maxY);
+                        float z = UnityEngine.Random.Range(minScale, maxScale);
+                        #endregion
+                        go.transform.position += new Vector3(xP, yP, 0);
+                        go.transform.localScale += new Vector3(z, z, z);
+                        go.GetComponent<SpriteRenderer>().sortingOrder = ((mapSizeY * 100) - Mathf.RoundToInt(go.transform.position.y * 100));
+                        //go.GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt(((mapSizeY * 10) - (transform.position.y * 10)));
+                    }
+
+                }
             }
         }
     }

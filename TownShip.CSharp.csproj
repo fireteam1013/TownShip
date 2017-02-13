@@ -52,6 +52,9 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -66,6 +69,9 @@
     </Reference>
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VR">
       <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
@@ -127,6 +133,7 @@
     <Compile Include="Assets\Scripts\de_Movement\d_Unit.cs" />
     <Compile Include="Assets\Scripts\de_World\TileType.cs" />
     <Compile Include="Assets\Scripts\de_World\de_MapMakerOld.cs" />
+    <Compile Include="Assets\Scripts\de_World\de_MapMovement.cs" />
     <Compile Include="Assets\Scripts\de_World\de_MouseControls.cs" />
     <Compile Include="Assets\Scripts\de_World\de_Nodes.cs" />
     <Compile Include="Assets\Scripts\de_World\de_Unit.cs" />
