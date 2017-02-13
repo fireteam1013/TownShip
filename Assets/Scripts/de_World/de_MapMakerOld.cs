@@ -8,8 +8,12 @@ public class de_MapMakerOld : MonoBehaviour {
     public de_Nodes[,] nodes;
 
     public TileType[] tileTypes;
+    public GameObject overlayMove;
+    public GameObject overlayAttack;
+
 
     public static int[,] tiles;
+    public GameObject[,] overlayMoveArray;
     public int mapSizeX;
     public int mapSizeY;
 
@@ -207,8 +211,15 @@ public class de_MapMakerOld : MonoBehaviour {
         return totalMountainTileCount;
     }
 
+    
+
     void GenerateMapVisuals()
     {
+        GameObject mapHolder = new GameObject();
+        mapHolder.name = "MapHolder";
+
+        overlayMoveArray = new GameObject[mapSizeX, mapSizeY];
+
         for (int x = 0; x < mapSizeX; x++)
         {
             for (int y = 0; y < mapSizeY; y++)
@@ -216,11 +227,10 @@ public class de_MapMakerOld : MonoBehaviour {
                 TileType tt = tileTypes[tiles[x, y]];
                 float hx = x;
                 float hz = y;
-                if(tiles[x,y] != 0)
-                {
-                    GameObject go = (GameObject)Instantiate(tt.tileVisualPrefab, new Vector3(hx, hz, 0), Quaternion.identity);
-                }
-                
+                GameObject go = (GameObject)Instantiate(tt.tileVisualPrefab, new Vector3(hx, hz, 0), Quaternion.identity, mapHolder.transform);
+                GameObject ov = Instantiate(overlayMove, new Vector3(hx, hz, 0), transform.rotation, go.transform);
+                ov.SetActive(false);
+                overlayMoveArray[x, y] = ov;
             }
         }
     }
@@ -236,7 +246,10 @@ public class de_MapMakerOld : MonoBehaviour {
         {
             for (int y = 0; y < mapSizeY; y++)
             {
+                //Create a new node in the array
                 nodes[x, y] = new de_Nodes();
+                //Set the node movement cost to the tile value
+                //TODO: this needs to change, but later
                 nodes[x, y].movementCost = tiles[x, y];
             }
         }

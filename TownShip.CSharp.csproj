@@ -131,6 +131,7 @@
     <Compile Include="Assets\Scripts\de_World\de_Nodes.cs" />
     <Compile Include="Assets\Scripts\de_World\de_Unit.cs" />
     <Compile Include="Assets\Scripts\de_World\de_UnitList.cs" />
+    <Compile Include="Assets\Scripts\de_World\de_UnitMovementManager.cs" />
     <Compile Include="Assets\Scripts\de_World\de_WorldMaker.cs" />
   </ItemGroup>
   <ItemGroup>

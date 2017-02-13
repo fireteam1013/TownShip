@@ -5,9 +5,13 @@ using UnityEngine;
 [SerializeField]
 public class de_Nodes {
 
-
     public int movementCost;
-    public de_Nodes previousTile;
+    
     public GameObject x;
 
+    public de_Nodes previousNode;
+
+    public int FScore;
+    public int GScore;
+    public int HScore;
 }
