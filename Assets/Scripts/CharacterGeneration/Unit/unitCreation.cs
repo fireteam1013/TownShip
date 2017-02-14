@@ -7,8 +7,7 @@ using System.Collections;
 
 public class unitCreation : MonoBehaviour
 {
-    public baseRace[] race =
-        new baseRace[] {
+    public baseRace[] race = new baseRace[] {
         new raceNull(),
         new raceDwarf(),
         new raceElf(),
