@@ -10,7 +10,9 @@ public class unitCreation : MonoBehaviour
     public baseRace[] race =
         new baseRace[] {
         new raceNull(),
+        new raceDwarf(),
         new raceElf(),
+        new raceHalfling(),
         new raceHuman()
         };
 
@@ -82,7 +84,7 @@ public class unitCreation : MonoBehaviour
 
         attack = selectedClass.AttackBonus[level - 1];
         resistance = selectedRace.BaseResistance + selectedClass.ResistanceBonus[level - 1];
-        reflex = selectedRace.BaseReflexes + selectedClass.ReflexBonus[level - 1];
+        reflex = selectedRace.BaseReflex + selectedClass.ReflexBonus[level - 1];
         will = selectedRace.BaseWill + selectedClass.WillBonus[level - 1];
     }
 

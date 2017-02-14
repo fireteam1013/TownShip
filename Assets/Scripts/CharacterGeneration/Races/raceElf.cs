@@ -10,17 +10,39 @@ public class raceElf : baseRace
     public raceElf()
     {
         RaceName = "Elf";
-        RaceDescription = "Race Elf";
+        RaceDescription = "Elf Description";
 
-        BaseHealth = 2;
-        BaseMagic = 4;
-        BaseStrength = 2;
-        BaseAgility = 6;
-        BaseIntelligence = 6;
+        BaseHealth = 6;
+        MinHealthInc = 1;
+        MaxHealthInc = 4;
+
+        BaseMagic = 2;
+        MinMagicInc = 0;
+        MaxMagicInc = 2;
+
+        BaseStrength = 6;
+        MinStrengthInc = 2;
+        MaxStrengthInc = 4;
+
+        BaseAgility = 2;
+        MinAgilityInc = 0;
+        MaxAgilityInc = 3;
+
+        BaseIntelligence = 2;
+        MinIntelligenceInc = 0;
+        MaxIntelligenceInc = 2;
 
         BaseResistance = 6;
-        BaseReflexes = 6;
+        MinResistanceInc = 2;
+        MaxResistanceInc = 4;
+
+        BaseReflex = 2;
+        MinReflexInc = 0;
+        MaxReflexInc = 2;
+
         BaseWill = 6;
+        MinWillInc = 2;
+        MaxWillInc = 4;
     }
 
 }

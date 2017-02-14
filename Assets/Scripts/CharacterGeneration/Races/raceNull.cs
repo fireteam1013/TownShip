@@ -9,17 +9,39 @@ public class raceNull : baseRace
 {
     public raceNull()
     {
-        RaceName = "";
-        RaceDescription = "";
+        RaceName = "null";
+        RaceDescription = "null Description";
 
-        BaseHealth = 0;
-        BaseMagic = 0;
-        BaseStrength = 0;
-        BaseAgility = 0;
-        BaseIntelligence = 0;
+        BaseHealth = 6;
+        MinHealthInc = 1;
+        MaxHealthInc = 4;
 
-        BaseResistance = 0;
-        BaseReflexes = 0;
-        BaseWill = 0;
+        BaseMagic = 2;
+        MinMagicInc = 0;
+        MaxMagicInc = 2;
+
+        BaseStrength = 6;
+        MinStrengthInc = 2;
+        MaxStrengthInc = 4;
+
+        BaseAgility = 2;
+        MinAgilityInc = 0;
+        MaxAgilityInc = 3;
+
+        BaseIntelligence = 2;
+        MinIntelligenceInc = 0;
+        MaxIntelligenceInc = 2;
+
+        BaseResistance = 6;
+        MinResistanceInc = 2;
+        MaxResistanceInc = 4;
+
+        BaseReflex = 2;
+        MinReflexInc = 0;
+        MaxReflexInc = 2;
+
+        BaseWill = 6;
+        MinWillInc = 2;
+        MaxWillInc = 4;
     }
 }

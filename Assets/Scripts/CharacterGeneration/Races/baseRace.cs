@@ -11,19 +11,41 @@ public class baseRace
     private string raceDescription;
 
     private int baseHealth;
+    private int minHealthInc;
+    private int maxHealthInc;
+
     private int baseMagic;
+    private int minMagicInc;
+    private int maxMagicInc;
+
     private int baseStrength;
+    private int minStrengthInc;
+    private int maxStrengthInc;
+
     private int baseAgility;
+    private int minAgilityInc;
+    private int maxAgilityInc;
+
     private int baseIntelligence;
+    private int minIntelligenceInc;
+    private int maxIntelligenceInc;
 
     private int baseResistance;
-    private int baseReflexes;
+    private int minResistanceInc;
+    private int maxResistanceInc;
+
+    private int baseReflex;
+    private int minReflexInc;
+    private int maxReflexInc;
+
     private int baseWill;
+    private int minWillInc;
+    private int maxWillInc;
 
     private int[] passiveRaceAbilities;
     private int[] activeRaceAbilities;
 
-    #region Encapulation
+    #region Encapsulation
     public string RaceName
     {
         get
@@ -63,6 +85,32 @@ public class baseRace
         }
     }
 
+    public int MinHealthInc
+    {
+        get
+        {
+            return minHealthInc;
+        }
+
+        set
+        {
+            minHealthInc = value;
+        }
+    }
+
+    public int MaxHealthInc
+    {
+        get
+        {
+            return maxHealthInc;
+        }
+
+        set
+        {
+            maxHealthInc = value;
+        }
+    }
+
     public int BaseMagic
     {
         get
@@ -73,6 +121,32 @@ public class baseRace
         set
         {
             baseMagic = value;
+        }
+    }
+
+    public int MinMagicInc
+    {
+        get
+        {
+            return minMagicInc;
+        }
+
+        set
+        {
+            minMagicInc = value;
+        }
+    }
+
+    public int MaxMagicInc
+    {
+        get
+        {
+            return maxMagicInc;
+        }
+
+        set
+        {
+            maxMagicInc = value;
         }
     }
 
@@ -89,6 +163,32 @@ public class baseRace
         }
     }
 
+    public int MinStrengthInc
+    {
+        get
+        {
+            return minStrengthInc;
+        }
+
+        set
+        {
+            minStrengthInc = value;
+        }
+    }
+
+    public int MaxStrengthInc
+    {
+        get
+        {
+            return maxStrengthInc;
+        }
+
+        set
+        {
+            maxStrengthInc = value;
+        }
+    }
+
     public int BaseAgility
     {
         get
@@ -99,6 +199,32 @@ public class baseRace
         set
         {
             baseAgility = value;
+        }
+    }
+
+    public int MinAgilityInc
+    {
+        get
+        {
+            return minAgilityInc;
+        }
+
+        set
+        {
+            minAgilityInc = value;
+        }
+    }
+
+    public int MaxAgilityInc
+    {
+        get
+        {
+            return maxAgilityInc;
+        }
+
+        set
+        {
+            maxAgilityInc = value;
         }
     }
 
@@ -115,6 +241,32 @@ public class baseRace
         }
     }
 
+    public int MinIntelligenceInc
+    {
+        get
+        {
+            return minIntelligenceInc;
+        }
+
+        set
+        {
+            minIntelligenceInc = value;
+        }
+    }
+
+    public int MaxIntelligenceInc
+    {
+        get
+        {
+            return maxIntelligenceInc;
+        }
+
+        set
+        {
+            maxIntelligenceInc = value;
+        }
+    }
+
     public int BaseResistance
     {
         get
@@ -128,16 +280,68 @@ public class baseRace
         }
     }
 
-    public int BaseReflexes
+    public int MinResistanceInc
     {
         get
         {
-            return baseReflexes;
+            return minResistanceInc;
         }
 
         set
         {
-            baseReflexes = value;
+            minResistanceInc = value;
+        }
+    }
+
+    public int MaxResistanceInc
+    {
+        get
+        {
+            return maxResistanceInc;
+        }
+
+        set
+        {
+            maxResistanceInc = value;
+        }
+    }
+
+    public int BaseReflex
+    {
+        get
+        {
+            return baseReflex;
+        }
+
+        set
+        {
+            baseReflex = value;
+        }
+    }
+
+    public int MinReflexInc
+    {
+        get
+        {
+            return minReflexInc;
+        }
+
+        set
+        {
+            minReflexInc = value;
+        }
+    }
+
+    public int MaxReflexInc
+    {
+        get
+        {
+            return maxReflexInc;
+        }
+
+        set
+        {
+            maxReflexInc = value;
         }
     }
 
@@ -151,6 +355,32 @@ public class baseRace
         set
         {
             baseWill = value;
+        }
+    }
+
+    public int MinWillInc
+    {
+        get
+        {
+            return minWillInc;
+        }
+
+        set
+        {
+            minWillInc = value;
+        }
+    }
+
+    public int MaxWillInc
+    {
+        get
+        {
+            return maxWillInc;
+        }
+
+        set
+        {
+            maxWillInc = value;
         }
     }
 
