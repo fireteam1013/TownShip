@@ -10,17 +10,39 @@ public class raceOrc : baseRace
     public raceOrc()
     {
         RaceName = "Orc";
-        RaceDescription = "A savage race in the land.  Orcs are a tribal race who has no central government.";
+        RaceDescription = "Orc Description";
 
-        BaseHealth = 8;
+        BaseHealth = 6;
+        MinHealthInc = 1;
+        MaxHealthInc = 4;
+
         BaseMagic = 2;
-        BaseStrength = 8;
-        BaseAgility = 0;
-        BaseIntelligence = 0;
+        MinMagicInc = 0;
+        MaxMagicInc = 2;
 
-        BaseResistance = 4;
-        BaseReflexes = 0;
-        BaseWill = 0;
+        BaseStrength = 6;
+        MinStrengthInc = 2;
+        MaxStrengthInc = 4;
+
+        BaseAgility = 2;
+        MinAgilityInc = 0;
+        MaxAgilityInc = 3;
+
+        BaseIntelligence = 2;
+        MinIntelligenceInc = 0;
+        MaxIntelligenceInc = 2;
+
+        BaseResistance = 6;
+        MinResistanceInc = 2;
+        MaxResistanceInc = 4;
+
+        BaseReflex = 2;
+        MinReflexInc = 0;
+        MaxReflexInc = 2;
+
+        BaseWill = 6;
+        MinWillInc = 2;
+        MaxWillInc = 4;
     }
 
 }
