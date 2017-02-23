@@ -77,6 +77,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\00_MainMenu\de_MainMenu.cs" />
     <Compile Include="Assets\Scripts\01_GameCreation\de_PartySize.cs" />
+    <Compile Include="Assets\Scripts\05_BaseMap\BaseMapGenerator.cs" />
     <Compile Include="Assets\Scripts\CharacterGeneration\Abilities\ActiveAbilities.cs" />
     <Compile Include="Assets\Scripts\CharacterGeneration\Classes\baseClasses.cs" />
     <Compile Include="Assets\Scripts\CharacterGeneration\Classes\classNull.cs" />
@@ -111,12 +112,14 @@
     <Compile Include="Assets\Scripts\CharacterGeneration\StatHolder.cs" />
     <Compile Include="Assets\Scripts\CharacterGeneration\Unit\unitCreation.cs" />
     <Compile Include="Assets\Scripts\CharacterGeneration\Unit\unitScript.cs" />
+    <Compile Include="Assets\Scripts\CharacterGeneration\de_UnitVisuals.cs" />
     <Compile Include="Assets\Scripts\CharacterGeneration\mm_PartyGeneration.cs" />
     <Compile Include="Assets\Scripts\Scratch Combat\CC_Unit.cs" />
     <Compile Include="Assets\Scripts\Scratch Combat\CombatCalculator.cs" />
     <Compile Include="Assets\Scripts\Scratch Combat\MovementCalculator.cs" />
     <Compile Include="Assets\Scripts\Scratch Combat\Node.cs" />
     <Compile Include="Assets\Scripts\Scratch Combat\NodeHolder.cs" />
+    <Compile Include="Assets\Scripts\de_Movement\aStar.cs" />
     <Compile Include="Assets\Scripts\de_Movement\d_CameraMovement.cs" />
     <Compile Include="Assets\Scripts\de_Movement\d_MapMaker.cs" />
     <Compile Include="Assets\Scripts\de_Movement\d_MovementController.cs" />

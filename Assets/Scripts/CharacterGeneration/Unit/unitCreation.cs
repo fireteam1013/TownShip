@@ -7,8 +7,7 @@ using System.Collections;
 
 public class unitCreation : MonoBehaviour
 {
-    public baseRace[] race =
-        new baseRace[] {
+    public baseRace[] race = new baseRace[] {
         new raceNull(),
         new raceDwarf(),
         new raceElf(),
@@ -24,6 +23,7 @@ public class unitCreation : MonoBehaviour
         new class_Ranger()
     };
 
+    private unitScript selectedUnit;
 
     public baseRace selectedRace;
     public baseClasses selectedClass;
@@ -74,18 +74,11 @@ public class unitCreation : MonoBehaviour
         nickName = nn;
     }
 
-    void ConfigureStats()
-    {
-        health = selectedRace.BaseHealth + (selectedClass.HealthBonus * level);
-        magic = selectedRace.BaseMagic + (selectedClass.MagicBonus * level);
-        strength = selectedRace.BaseStrength + (selectedClass.StrengthBonus * level);
-        agility = selectedRace.BaseAgility + (selectedClass.AgilityBonus * level);
-        intelligence = selectedRace.BaseIntelligence + (selectedClass.IntelligenceBonus * level);
 
-        attack = selectedClass.AttackBonus[level - 1];
-        resistance = selectedRace.BaseResistance + selectedClass.ResistanceBonus[level - 1];
-        reflex = selectedRace.BaseReflex + selectedClass.ReflexBonus[level - 1];
-        will = selectedRace.BaseWill + selectedClass.WillBonus[level - 1];
+    public void Randomize()
+    {
+        int _randomRace = Random.Range(1, race.Length);
+        int _randomClass = Random.Range(1, playerClass.Length);
     }
 
 }

@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class baseClasses {
@@ -7,15 +6,29 @@ public class baseClasses {
     private string className;
     private string classDescrition;
 
-    private int healthBonus;
-    private int magicBonus;
-    private int strengthBonus;
-    private int agilityBonus;
-    private int intelligenceBonus;
-    private int[] attackBonus;
-    private int[] resistanceBonus;
-    private int[] reflexBonus;
-    private int[] willBonus;
+    private int minHealthInc;
+    private int maxHealthInc;
+
+    private int minMagicInc;
+    private int maxMagicInc;
+
+    private int minStrengthInc;
+    private int maxStrengthInc;
+
+    private int minAgilityInc;
+    private int maxAgilityInc;
+
+    private int minIntelligenceInc;
+    private int maxIntelligenceInc;
+
+    private int minResistanceInc;
+    private int maxResistanceInc;
+
+    private int minReflexInc;
+    private int maxReflexInc;
+
+    private int minWillInc;
+    private int maxWillInc;
 
     private int[] passiveClassAbilities;
     private int[] activeClassAbilities;
@@ -47,120 +60,211 @@ public class baseClasses {
         }
     }
 
-    public int HealthBonus
+    public int MinHealthInc
     {
         get
         {
-            return healthBonus;
+            return minHealthInc;
         }
 
         set
         {
-            healthBonus = value;
+            minHealthInc = value;
         }
     }
 
-    public int MagicBonus
+    public int MaxHealthInc
     {
         get
         {
-            return magicBonus;
+            return maxHealthInc;
         }
 
         set
         {
-            magicBonus = value;
+            maxHealthInc = value;
         }
     }
 
-    public int StrengthBonus
+    public int MinMagicInc
     {
         get
         {
-            return strengthBonus;
+            return minMagicInc;
         }
 
         set
         {
-            strengthBonus = value;
+            minMagicInc = value;
         }
     }
 
-    public int AgilityBonus
+    public int MaxMagicInc
     {
         get
         {
-            return agilityBonus;
+            return maxMagicInc;
         }
 
         set
         {
-            agilityBonus = value;
+            maxMagicInc = value;
         }
     }
 
-    public int IntelligenceBonus
+    public int MinStrengthInc
     {
         get
         {
-            return intelligenceBonus;
+            return minStrengthInc;
         }
 
         set
         {
-            intelligenceBonus = value;
+            minStrengthInc = value;
         }
     }
 
-    public int[] AttackBonus
+    public int MaxStrengthInc
     {
         get
         {
-            return attackBonus;
+            return maxStrengthInc;
         }
 
         set
         {
-            attackBonus = value;
+            maxStrengthInc = value;
         }
     }
 
-    public int[] ResistanceBonus
+    public int MinAgilityInc
     {
         get
         {
-            return resistanceBonus;
+            return minAgilityInc;
         }
 
         set
         {
-            resistanceBonus = value;
+            minAgilityInc = value;
         }
     }
 
-    public int[] ReflexBonus
+    public int MaxAgilityInc
     {
         get
         {
-            return reflexBonus;
+            return maxAgilityInc;
         }
 
         set
         {
-            reflexBonus = value;
+            maxAgilityInc = value;
         }
     }
 
-    public int[] WillBonus
+    public int MinIntelligenceInc
     {
         get
         {
-            return willBonus;
+            return minIntelligenceInc;
         }
 
         set
         {
-            willBonus = value;
+            minIntelligenceInc = value;
+        }
+    }
+
+    public int MaxIntelligenceInc
+    {
+        get
+        {
+            return maxIntelligenceInc;
+        }
+
+        set
+        {
+            maxIntelligenceInc = value;
+        }
+    }
+
+    public int MinResistanceInc
+    {
+        get
+        {
+            return minResistanceInc;
+        }
+
+        set
+        {
+            minResistanceInc = value;
+        }
+    }
+
+    public int MaxResistanceInc
+    {
+        get
+        {
+            return maxResistanceInc;
+        }
+
+        set
+        {
+            maxResistanceInc = value;
+        }
+    }
+
+    public int MinReflexInc
+    {
+        get
+        {
+            return minReflexInc;
+        }
+
+        set
+        {
+            minReflexInc = value;
+        }
+    }
+
+    public int MaxReflexInc
+    {
+        get
+        {
+            return maxReflexInc;
+        }
+
+        set
+        {
+            maxReflexInc = value;
+        }
+    }
+
+    public int MinWillInc
+    {
+        get
+        {
+            return minWillInc;
+        }
+
+        set
+        {
+            minWillInc = value;
+        }
+    }
+
+    public int MaxWillInc
+    {
+        get
+        {
+            return maxWillInc;
+        }
+
+        set
+        {
+            maxWillInc = value;
         }
     }
 
