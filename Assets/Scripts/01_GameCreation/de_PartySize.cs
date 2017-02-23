@@ -36,25 +36,35 @@ public class de_PartySize : MonoBehaviour {
     int partySize;
 
 
+    //==================================================
     public void MouseOver(int x)
+    //==================================================
     {
         partyDescriptionText.text = partyDescription[x];
     }
 
+
+    //==================================================
     public void SetPartySize(int x)
+    //==================================================
     {
         partySize = x;
         p_NewGamePanel.SetActive(false);
         ConfigurePartyPanel();
     }
 
+
+    //==================================================
     public void Back()
+    //==================================================
     {
         SceneManager.LoadScene(0);
     }
 
 
+    //==================================================
     public void ConfigurePartyPanel()
+    //==================================================
     {
         p_PartyPanel.SetActive(true);
         partyMemberUnits = new GameObject[partySize];

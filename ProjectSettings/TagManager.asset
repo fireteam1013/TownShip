@@ -13,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - World Tiles
+  - Items
+  - Units
   - 
   - 
   - 
@@ -40,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: WorldTiles
+    uniqueID: 1447418763
+    locked: 0
+  - name: Items
+    uniqueID: 139401929
+    locked: 0
+  - name: Units
+    uniqueID: 2262570871
     locked: 0
